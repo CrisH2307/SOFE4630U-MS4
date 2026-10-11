@@ -1,6 +1,6 @@
 # Milestone 4: Smart Meter Preprocessing Pipeline
 
-- Link: https://github.com/CrisH2307/ENGR5520_M4.git
+- Link: https://github.com/CrisH2307/SOFE4630U-MS4
 
 ## 1. System Design and Architecture
 The preprocessing pipeline was migrated from a monolithic Dataflow job to an event-driven microservices architecture hosted on Google Kubernetes Engine (GKE). To satisfy the constraint of utilizing a single Google Cloud Pub/Sub topic (`smart-meter-topic`), the architecture implements **Attribute-Based Message Routing**. 
