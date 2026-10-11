@@ -1,0 +1,4 @@
+.git
+.gitignore
+# Explicitly allow json files even if ignored by git
+!*.json

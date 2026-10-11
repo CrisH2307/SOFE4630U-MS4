@@ -13,13 +13,13 @@ spec:
         app: recorder
     spec:
       containers:
-        - image: $RECORDER_IMAGE
+        - image: northamerica-northeast2-docker.pkg.dev/project-4cfdac74-a7d9-4d41-abf/sofe4630u/recorder:latest
           name: recorder
           env:
             - name: POSTGRES_HOST
               value: postgres
             - name: GCP_PROJECT
-              value: $PROJECT
+              value: "project-4cfdac74-a7d9-4d41-abf"
             - name: ELECTION_SUB_ID
               value: election-record-sub
             - name: TOPIC_NAME
@@ -50,7 +50,7 @@ spec:
         app: postgres
     spec:
       containers:
-        - image: $POSTGRES_IMAGE
+        - image: northamerica-northeast2-docker.pkg.dev/project-4cfdac74-a7d9-4d41-abf/sofe4630u/postgres:election
           name: postgres
           env:
             - name: POSTGRES_DB
